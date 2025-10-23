@@ -1,0 +1,150 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body and background */
+body {
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hide pages by default */
+.screen {
+  display: none;
+  padding: 20px;
+}
+
+.screen.active {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  align-items: center;
+  background-color: #f1c40f;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topbar .logo {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.topbar h2 {
+  flex-grow: 1;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+#user-label {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Card styling */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #f1c40f;
+  color: #2c3e50;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d4ac0d;
+}
+
+/* Navigation buttons container */
+.nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs and lists */
+p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+ul {
+  margin: 10px 0 10px 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Video styling */
+video {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 16px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f1c40f;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Google Sign-In button container adjustments */
+#g_id_onload, .g_id_signin {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
